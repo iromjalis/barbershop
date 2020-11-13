@@ -1,0 +1,172 @@
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans/open-sans-v18-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-regular.woff") format("woff"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-regular.ttf") format("truetype"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-regular.svg#OpenSans") format("svg");
+}
+/* open-sans-600 - latin_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/open-sans/open-sans-v18-latin_cyrillic-600.eot"); /* IE9 Compat Modes */
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-600.woff2") format("woff2"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-600.woff") format("woff"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-600.ttf") format("truetype"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-600.svg#OpenSans") format("svg");
+}
+/* open-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans/open-sans-v18-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local("Open Sans Bold"), local("OpenSans-Bold"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-700.woff") format("woff"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-700.ttf") format("truetype"),
+    url("../fonts/open-sans/open-sans-v18-latin_cyrillic-700.svg#OpenSans") format("svg");
+}
+
+:root {
+  --main-text-cl: #555;
+  --accent-cl: #ff6c00;
+  --black: #303030;
+  --gray: #9da480;
+  --white: #fff;
+  --dark-bg: #191c26;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: var(--main-text-cl);
+}
+
+address {
+  font-style: normal;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-cl);
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--black);
+  background-color: transparent;
+
+  border: 1px solid var(--accent-cl);
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 12px 20px;
+}
+
+.menu-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  color: var(--white);
+}
+
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.2em;
+  color: var(--black);
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--black);
+}
+.section-title {
+  font-size: 42px;
+  line-height: 1.1667;
+}
+.section-label {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.page-title {
+  font-size: 72px;
+  line-height: 1.18;
+}
+
+.team-item {
+  text-align: center;
+}
+
+.item-title {
+  font-weight: normal;
+  line-height: 1.3889;
+  letter-spacing: 0.02em;
+  color: var(--black);
+}
+
+.team-position {
+  font-size: 14px;
+  line-height: 1.357;
+  letter-spacing: 0.02em;
+  color: var(--accent-cl);
+}
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--gray);
+}
+
+.dark-bg {
+  background-color: var(--dark-bg);
+  color: var(--gray);
+}
+
+.dark-bg .section-title,
+.dark-bg .page-title {
+  color: var(--white);
+}
+
+.dark-bg .section-label {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.dark-bg .btn {
+  color: var(--white);
+}
