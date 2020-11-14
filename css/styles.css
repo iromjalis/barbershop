@@ -61,6 +61,7 @@ address {
 .link {
   text-decoration: none;
   color: inherit;
+  color: var(--main-text-cl);
 }
 
 .list {
