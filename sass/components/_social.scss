@@ -1,0 +1,22 @@
+.social {
+  display: inline-flex;
+  align-items: center;
+  color: $black;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.social-link {
+  display: block;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: inherit;
+}
+
+.social::before {
+  @extend %decor;
+}

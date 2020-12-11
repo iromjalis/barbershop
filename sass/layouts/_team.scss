@@ -1,0 +1,25 @@
+.team {
+  background-color: $light-gray;
+}
+
+.team-item {
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include for-size(desktop) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+.team-item-img {
+  margin-bottom: 20px;
+}
+
+.team-position {
+  font-size: 14px;
+  line-height: 1.357;
+  color: $accent-cl;
+}

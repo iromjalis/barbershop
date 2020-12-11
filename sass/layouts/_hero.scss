@@ -1,0 +1,69 @@
+.hero {
+  @include for-size(mobile-only) {
+    background-color: $dark-bg;
+    background-image: url(../images/hero/mobile/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.hero .container {
+  position: relative;
+
+  @include for-size(mobile-only) {
+    background-color: transparent;
+  }
+
+  @include for-size(tablet) {
+    background-image: url(../images/hero/tablet/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 120px top;
+  }
+
+  @include for-size(desktop) {
+    background-image: url(../images/hero/desktop/3.jpg);
+    background-position: left 115px top;
+  }
+}
+
+.hero-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  width: 115px;
+  padding-left: 15px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+
+  @include for-size(mobile-only) {
+    display: none;
+  }
+}
+
+.hero-sidebar .social {
+  transform: rotate(-90deg) translateX(50%);
+}
+
+.hero-content {
+  padding-top: 208px;
+  padding-bottom: 183px;
+
+  @include for-size(tablet) {
+    max-width: 50%;
+    padding-top: 272px;
+    padding-bottom: 245px;
+    margin-left: 200px;
+  }
+
+  @include for-size(desktop) {
+    max-width: 470px;
+    padding-bottom: 170px;
+    margin-left: 206px;
+  }
+}

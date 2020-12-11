@@ -1,0 +1,26 @@
+.menu {
+  @include for-size(tablet) {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.menu-item:not(:last-child) {
+  @include for-size(tablet) {
+    margin-right: 24px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 40px;
+  }
+}
+
+.menu-link {
+  font-weight: 600;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+}
+
+.menu-link.current {
+  color: $accent-cl;
+}

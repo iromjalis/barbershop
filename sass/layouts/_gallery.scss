@@ -1,0 +1,9 @@
+.gallery-item {
+  @include for-size(tablet) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @include for-size(desktop) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}

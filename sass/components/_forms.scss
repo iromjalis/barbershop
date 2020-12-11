@@ -1,0 +1,60 @@
+.contact-form {
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.form-field {
+  width: 100%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 44px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: $white;
+  outline: none;
+
+  @include for-size(tablet) {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+.form-field::placeholder {
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.form-field:-webkit-autofill,
+.form-field:-webkit-autofill:hover,
+.form-field:-webkit-autofill:focus {
+  -webkit-text-fill-color: $white;
+  -webkit-box-shadow: 0 0 0px 1000px $dark-bg inset;
+}
+
+.form-field:focus {
+  border-bottom: 1px solid $white;
+}
+
+.form-field:not(:placeholder-shown):focus:valid {
+  color: green;
+  border-color: green;
+}
+
+.form-field:not(:placeholder-shown):invalid {
+  color: red;
+  border-color: red;
+}
+
+.form-message {
+  width: 100%;
+  resize: none;
+}

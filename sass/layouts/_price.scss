@@ -1,0 +1,98 @@
+.price {
+  background-image: url(../images/price/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/price/bg-mobile@2x.png);
+  }
+
+  @include for-size(tablet) {
+    background-image: url(../images/price/bg-tablet.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/price/bg-tablet@2x.png);
+    }
+  }
+
+  @include for-size(desktop) {
+    background-image: url(../images/price/bg.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/price/bg@2x.png);
+    }
+  }
+}
+
+.price-list-wrap {
+  @media screen and (max-width: 1199px) {
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+  @include for-size(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.price-list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include for-size(mobile-only) {
+    font-size: 14px;
+  }
+
+  @include for-size(desktop) {
+    width: 50%;
+  }
+}
+
+.price-list:first-child {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 10px;
+  }
+  @include for-size(desktop) {
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+}
+
+.price-list:last-child {
+  @media screen and (max-width: 1199px) {
+    padding-top: 10px;
+  }
+  @include for-size(desktop) {
+    background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
+}
+
+.price-item {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+
+  @include for-size(tablet) {
+    padding: 0 40px;
+  }
+}
+
+.price-item:not(:nth-child(4n)) {
+  margin-bottom: 20px;
+}
+
+.price-line {
+  flex-grow: 1;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+}

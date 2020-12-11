@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about > .flexbox {
+    display: flex;
+  }
+
+  .about-container > .content-box {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .about-images .content-box:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.about-images {
+  display: none;
+
+  @include for-size(tablet) {
+    display: block;
+  }
+}

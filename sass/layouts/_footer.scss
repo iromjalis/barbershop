@@ -1,0 +1,28 @@
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  align-items: center;
+
+  @include for-size(tablet) {
+    justify-content: space-between;
+  }
+}
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: $gray;
+
+  @include for-size(mobile-only) {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
